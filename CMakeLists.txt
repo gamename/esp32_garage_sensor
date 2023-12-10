@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.27)
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(esp32_garage_sensor)
-include_directories(${IDF_PATH}/components/freertos/FreeRTOS-Kernel/include
+include_directories(
+        ${IDF_PATH}/components/freertos/FreeRTOS-Kernel/include
         ${IDF_PATH}/components/esp_system/include
         ${IDF_PATH}/components/esp_event/include
         ${IDF_PATH}/components/esp_netif/include
